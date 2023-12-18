@@ -38,6 +38,7 @@ header img {
 }
 
 .dropdown {
+    text-align: center;
     display: none;
     position: absolute;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -48,6 +49,7 @@ header img {
 }
 
 .dropdown a {
+    margin: 1.5em;
     text-decoration: none;
     color: black;
     display: block;
@@ -87,13 +89,13 @@ video {
 }
 
 .section {
-    margin-bottom: 5em;
-    position: relative;
+    display: inline-block;
+    text-align: center;
     margin-top: 5em;
+    margin-bottom: 2em;
     bottom: 0;
     background-color: white;
-    width: 100%;
-    text-align: center;
+    width: 30%;
     padding: 12px;
     box-sizing: border-box;
 }
@@ -105,13 +107,98 @@ video {
 @media (max-width: 800px) {
     .section {
         font-size: 18px;
+        width: 100%;
+        display: block;
+    }
+}
+
+.resumebox {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5em;
+    background-color: white;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+.resumebox button {
+    margin-top: 3em;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    border-style: solid;
+    border-color: black;
+    font-size: 1.2em;
+    padding: 12px;
+}
+
+.resumebox button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .resumebox {
+        width: auto;
+    }
+}
+
+.contact {
+    margin-top: 5em;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    gap: 10em;
+    text-align: center;
+
+}
+
+.media {
+    text-align: center;
+
+}
+
+.media img {
+    margin-bottom: 0.7em;
+    width: 7em;
+    height: 7em;
+    border-radius: 12px;
+    transition: 0.9s;
+}
+
+.media img:hover {
+    transform: rotate(360deg);
+}
+
+.media button {
+    background-color: black;
+    color: white;
+    padding: 0.7em;
+    border-radius: 24px;
+    border: 3px outset black;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.media button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 800px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
     }
 }
 
 .footer {
     bottom: 0;
     font-size: 12px;
-    position: fixed;
     background-color: black;
     text-align: center;
     color: white;
